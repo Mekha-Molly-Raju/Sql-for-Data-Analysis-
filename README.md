@@ -1,5 +1,6 @@
 # Sql-for-Data-Analysis-
 Sql queries for data analysis
+
 SELECT Name,Places FROM batch1 WHERE Places='Tamilnadu' ORDER BY Name ASC;
 SELECT Name,COUNT(*) AS Age FROM batch1 GROUP BY Name ORDER BY Age DESC;
 SELECT batch2.sl_no,batch1.Name AS course,batch2.Fee from batch2 INNER JOIN batch1 ON batch2.sl_no=batch1.sl_no WHERE batch2.Fee>50000 ORDER BY batch2.Fee DESC;
